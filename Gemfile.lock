@@ -94,6 +94,7 @@ DEPENDENCIES
   puma
   rack
   rack-cors
+  sass
   sinatra
   sinatra-asset-pipeline
   sinatra-contrib

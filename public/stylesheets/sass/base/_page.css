@@ -1,0 +1,65 @@
+/*
+Error: Undefined mixin 'breakpoint'.
+        on line 8 of /home/ubuntu/workspace/public/stylesheets/sass/base/_page.scss, in `breakpoint'
+        from line 8 of /home/ubuntu/workspace/public/stylesheets/sass/base/_page.scss
+
+3: @import '../libs/mixins';
+4: 
+5: /* Basic *\/
+6: 
+7: // Ensures page width is always >=320px.
+8: @include breakpoint(xsmall) {
+9: 	html, body {
+10: 		min-width: 320px;
+11: 	}
+12: }
+13: 
+
+Backtrace:
+/home/ubuntu/workspace/public/stylesheets/sass/base/_page.scss:8:in `breakpoint'
+/home/ubuntu/workspace/public/stylesheets/sass/base/_page.scss:8
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/bin/scss:23:in `load'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/bin/scss:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.3.0@sinatra/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'breakpoint'.\A         on line 8 of /home/ubuntu/workspace/public/stylesheets/sass/base/_page.scss, in `breakpoint'\A         from line 8 of /home/ubuntu/workspace/public/stylesheets/sass/base/_page.scss\A \A 3: @import '../libs/mixins';\A 4: \A 5: /* Basic */\A 6: \A 7: // Ensures page width is always >=320px.\A 8: @include breakpoint(xsmall) {\A 9: 	html, body {\A 10: 		min-width: 320px;\A 11: 	}\A 12: }\A 13: "; }

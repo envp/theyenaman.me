@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title
+      | Vaibhav Yenamandra
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+    link[rel="stylesheet" href="stylesheets/main.css"]
+    link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"]
+    noscript
+      link[rel="stylesheet" href="stylesheets/noscript.css"]
+  body.is-loading
+    #wrapper
+      section#main
+        header
+          span.avatar
+            img[src="images/avatar.jpg" alt=""]
+          h1
+            | Vaibhav Yenamandra
+          ul.melinks
+            li
+              a[href="#"]
+                | About Me
+            li 
+              a[href="#"]
+                | Blog
+            li
+              a[href="files/curriculum_vitae_-_vaibhav_yenamandra.pdf"]
+                | Curriculum Vitae
+        footer
+          ul.icons
+            li
+              a.fa-github[href="https://github.com/vaibhav-y"]
+                | GitHub
+            li
+              a.fa-instagram[href="https://instagram.com/theyenaman"]
+                | Instagram
+            li
+              a.fa-facebook[href="https://facebook.com/theyenaman"]
+                | Facebook
+            li
+              a.fa-envelope.mail-modal
+                | Email
+      footer#footer
+        ul.copyright
+          li
+            | © Vaibhav Yenamandra
+    script
+      |  if ('addEventListener' in window) { window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); }); document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : ''); } 
