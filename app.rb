@@ -11,5 +11,13 @@ module Website
     get '/' do
       slim :index
     end
+    
+    get '/about' do
+      'Work in progress :)'
+    end
+    
+    get '/blog' do
+      'Work in progress :)'
+    end
   end
 end
