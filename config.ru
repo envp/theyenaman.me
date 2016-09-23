@@ -11,7 +11,7 @@ require 'app'
 
 use Rack::Deflater
 
-use Rack::Static, :urls => ['/stylesheets', '/js', '/fonts', '/images', 'files'], :root => 'public'
+use Rack::Static, :urls => ['/stylesheets', '/js', '/fonts', '/images', '/files'], :root => 'public'
 
 # Sass::Plugin.options[:style] = :compressed
 use Sass::Plugin::Rack

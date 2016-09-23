@@ -44,3 +44,6 @@ bower.json
 # CSS files generated from scss
 stylesheets/**/*.map
 stylesheets/**/*.css
+
+# Logo, icons made for personal use
+**/images/**

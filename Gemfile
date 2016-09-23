@@ -9,7 +9,7 @@ gem 'typhoeus'
 gem 'yui-compressor'
 
 # ruby
-gem 'activesupport'
+# gem 'activesupport'
 gem 'configatron'
 gem 'passenger'
 gem 'puma'
@@ -19,9 +19,10 @@ gem 'thread'
 
 # sinatra
 gem 'slim'
-gem 'sinatra'
+gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-asset-pipeline'
-gem 'sinatra-contrib'
+gem 'sinatra-contrib', require: 'sinatra/contrib/all'
+gem 'sinatra-static-assets', require: 'sinatra/static_assets'
 gem 'yard'
 gem 'yard-sinatra'
 gem 'sass'
