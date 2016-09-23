@@ -42,8 +42,8 @@ bower.json
 .byebug_history
 
 # CSS files generated from scss
-stylesheets/**/*.map
-stylesheets/**/*.css
+public/stylesheets/**/*.map
+public/stylesheets/**/*.css
 
 # Logo, icons made for personal use
 **/images/**
