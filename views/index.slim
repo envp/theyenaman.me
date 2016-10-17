@@ -6,67 +6,13 @@ html
     
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
-    meta content="#ffffff" name="msapplication-TileColor"
-    meta content="images/ico/ms-icon-144x144.png" name="msapplication-TileImage"
-    meta content="#ffffff" name="theme-color"
     
-    link href="images/ico/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"
-    link href="images/ico/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"
-    link href="images/ico/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"
-    link href="images/ico/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"
-    link href="images/ico/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"
-    link href="images/ico/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"
-    link href="images/ico/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"
-    link href="images/ico/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"
-    link href="images/ico/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"
-    link href="images/ico/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"
-    link href="images/ico/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"
-    link href="images/ico/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"
-    link href="images/ico/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"
-    link href="manifest.json" rel="manifest"
+    include partials/favicon
+    include partials/styles
     
-    link rel="stylesheet" href="stylesheets/main.css"
-    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-    
-    noscript
-      link rel="stylesheet" href="stylesheets/noscript.css"
-  
   body.is-loading
-    div#wrapper
-      section#main
-        header
-          span.avatar
-            img src="images/avatar.jpg" alt="Vaibhav Yenamandra"
-          h1
-            | Vaibhav Yenamandra
-          ul.melinks
-            li
-              a href="/about"
-                | About Me
-            li 
-              a href="/blog"
-                | My Blog
-            li
-              a href="/cv"
-                | Curriculum Vitae
-        footer
-          ul.icons
-            li
-              a.fa-github href="https://github.com/vaibhav-y"
-                | GitHub
-            li
-              a.fa-linkedin href="https://www.linkedin.com/in/theyenaman"
-                | LinkedIn
-            li
-              a.fa-instagram href="https://instagram.com/theyenaman"
-                | Instagram
-            li
-              a.fa-facebook href="https://facebook.com/theyenaman"
-                | Facebook
-      footer.footer
-        .copyright
-          li
-            | © Vaibhav Yenamandra
+    include partials/main
+    include partials/about
     
     script
       |  if ('addEventListener' in window) { window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); }); document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : ''); } 

@@ -22,6 +22,7 @@ GEM
     multi_json (1.12.1)
     multipart-post (2.0.0)
     oj (2.17.4)
+    pandoc-ruby (2.0.1)
     passenger (5.0.30)
       rack
       rake (>= 0.8.1)
@@ -81,6 +82,7 @@ DEPENDENCIES
   faraday_middleware-multi_json
   multi_json
   oj
+  pandoc-ruby
   passenger
   puma
   rack

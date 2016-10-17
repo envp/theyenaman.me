@@ -19,6 +19,7 @@ gem 'thread'
 
 # sinatra
 gem 'slim'
+gem 'pandoc-ruby', require: 'pandoc-ruby'
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-asset-pipeline'
 gem 'sinatra-contrib', require: 'sinatra/contrib/all'

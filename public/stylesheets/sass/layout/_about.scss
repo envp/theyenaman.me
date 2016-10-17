@@ -1,0 +1,26 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* About section of the webpage*/
+
+#about {
+	position: relative;
+	height: auto;
+	padding: _size(element-margin);
+	z-index: 2;
+	background-color: _palette(bg);
+	overflow: auto;
+
+	> * {
+		z-index: 1;
+	}
+	
+	h1 {
+	    font-size: 24px;
+	}
+
+	@include breakpoint(xxsmall) {
+		padding: (_size(element-margin) * 0.5);
+	}
+}

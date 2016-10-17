@@ -37,6 +37,12 @@
 
 }
 
+/// Adds an opacity attribute
+/// @param {number} $percent Percentage opacity
+@mixin opacity($percent) {
+	opacity: $percent;
+}
+
 /// Encodes a SVG data URL so IE doesn't choke (via codepen.io/jakob-e/pen/YXXBrp).
 /// @param {string} $svg SVG data URL.
 /// @return {string} Encoded SVG data URL.
