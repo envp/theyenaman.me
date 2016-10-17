@@ -1,18 +1,11 @@
 doctype html
 html
-  head
-    title
-      | Vaibhav Yenamandra
-    
-    meta charset="utf-8"
-    meta name="viewport" content="width=device-width, initial-scale=1"
-    
-    include partials/favicon
-    include partials/styles
+  include partials/header
     
   body.is-loading
     include partials/main
     include partials/about
+    include partials/education
     
     script
       |  if ('addEventListener' in window) { window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); }); document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : ''); } 

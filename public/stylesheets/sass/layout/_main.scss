@@ -69,28 +69,35 @@
     }
 }
 
-#about-wrapper {
-    min-height: 100%;
-    background: url("../images/udaipur_skyline.jpg") ;
-    background-repeat: no-repeat;
-	background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .description {
     text-transform: none;
     letter-spacing: 0.5px;
     font-size: 16px;
     font-family: 'Open Sans';
     line-height: 1.5em;
-    
+    text-align: justify;
+    padding-right: _size(element-margin) * 2;
     .content-link {
         font-style: italic;
         a {
             text-transform: none;
             color: _palette(highlight);
         }
+    }
+    
+    .dates {
+        display: block;
+        font-size: 14px;
+    }
+    
+    h3 {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    ul {
+        list-style: none;
+        line-height: 1.5em;
     }
 }
 

@@ -1,0 +1,59 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* About section of the webpage*/
+
+#education-wrapper {
+	position: relative;
+	min-height: 100%;
+	padding: _size(element-margin);
+	z-index: 2;
+	background-color: _palette(bg);
+	overflow: auto;
+
+	> * {
+		z-index: 1;
+	}
+
+	@include breakpoint(xxsmall) {
+		padding: (_size(element-margin) * 0.5);
+	}
+	div {
+	    div {
+	        h2 {
+	            font-family: "Open Sans";
+	            font-weight: 600;
+            }
+	    }
+	}
+	
+}
+
+#uf-wrapper {
+    background: url("../images/uf_century_tower.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 20px;
+    margin: _size(element-margin);
+}
+
+#bits-wrapper {
+    background: url("../images/bits_clock_tower.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -225%;
+    margin: _size(element-margin);
+}
+
+#uf {
+    width: 60%;
+    display: block;
+    background-color: _palette(bg);
+}
+
+#bits {
+    width: 60%;
+    display: block;
+    background-color: _palette(bg);
+}
