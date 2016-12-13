@@ -1,0 +1,26 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+#projects-wrapper {
+    position: relative;
+	min-height: 100%;
+	padding: _size(element-margin);
+    z-index: 2;
+    overflow: auto;
+    
+    > * {
+    		z-index: 1;
+	}
+    
+	@include breakpoint(xxsmall) {
+		padding: (_size(element-margin) * 0.5);
+	}
+	
+	h1 {
+	    background-color: _palette(bg);
+	    text-align: center;
+	    margin-right:30%;
+	    margin-left:30%;
+	}
+}

@@ -2,8 +2,6 @@
 @import '../libs/functions';
 @import '../libs/mixins';
 
-/* About section of the webpage*/
-
 #education-wrapper {
 	position: relative;
 	min-height: 100%;
@@ -19,6 +17,7 @@
 	@include breakpoint(xxsmall) {
 		padding: (_size(element-margin) * 0.5);
 	}
+	
 	div {
 	    div {
 	        h2 {
@@ -31,29 +30,49 @@
 }
 
 #uf-wrapper {
-    background: url("../images/uf_century_tower.jpg");
+    min-height: 45%;
     background-attachment: fixed;
     background-size: cover;
     background-position-y: 20px;
     margin: _size(element-margin);
+    display: flex;
 }
 
 #bits-wrapper {
-    background: url("../images/bits_clock_tower.jpg");
+    min-height: 45%;
     background-attachment: fixed;
     background-size: cover;
     background-position-y: -225%;
     margin: _size(element-margin);
+    display: flex;
 }
 
 #uf {
-    width: 60%;
+    width: 80%;
     display: block;
+    float: left;
     background-color: _palette(bg);
 }
 
+#uf-tower {
+    width: 20%;
+    float: left;
+    background-image: url("../images/uf_century_tower_sq.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #bits {
-    width: 60%;
+    width: 80%;
     display: block;
+    float: left;
     background-color: _palette(bg);
+}
+
+#bits-tower {
+    width: 20%;
+    float: left;
+    background-image: url("../images/bits_clock_tower_sq.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
