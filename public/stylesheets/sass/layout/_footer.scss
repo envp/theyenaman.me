@@ -4,7 +4,7 @@
 
 /* Footer */
 
-#footer {
+.footer {
 	@include vendor('align-self', 'flex-end');
 	width: 100%;
 	padding: _size(element-margin) 0 0 0;

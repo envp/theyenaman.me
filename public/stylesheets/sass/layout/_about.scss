@@ -4,6 +4,20 @@
 
 /* About section of the webpage*/
 
+#about-wrapper {
+	position: relative;
+    min-height: 100%;
+    background: url("../images/two_chairs_lake_pichola.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    .backlink {
+    	margin-left: _size(element-margin);
+    }
+}
+
 #about {
 	position: relative;
 	height: auto;

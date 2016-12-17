@@ -9,3 +9,6 @@ html
     include partials/projects
     script
       |  if ('addEventListener' in window) { window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); }); document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : ''); } 
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    script src="../js/main.js"
