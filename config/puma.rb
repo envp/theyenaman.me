@@ -4,7 +4,7 @@
 # accepted protocols.
 #
 # The default is "tcp://0.0.0.0:9292".
-bind 'tcp://0.0.0.0:8080'
+bind "unix://#{File.expand_path('../tmp/sockets/puma.sock', File.dirname(__FILE__))}"
 
 # The directory to operate out of.
 directory File.expand_path('../', File.dirname(__FILE__))
@@ -16,7 +16,7 @@ rackup File.expand_path('../config.ru', File.dirname(__FILE__))
 #
 # The default is "development".
 #
-# environment 'production'
+environment 'production'
 
 # Daemonize the server into the background. Highly suggest that
 # this be combined with "pidfile" and "stdout_redirect".
@@ -39,8 +39,9 @@ state_path File.expand_path('../tmp/pids/puma.state', File.dirname(__FILE__))
 #
 # stdout_redirect '../log/stdout', '../log/stderr'
 # stdout_redirect '../log/stdout', '../log/stderr', true
+# stdout_redirect '/var/log/supervisor/puma_website.stdout.log', '/var/log/supervisor/puma_website.stderr.log', true
 
-# Disable request logging.
+# Disable requestogging.
 #
 # The default is "false".
 #
@@ -51,4 +52,4 @@ state_path File.expand_path('../tmp/pids/puma.state', File.dirname(__FILE__))
 #
 # The default is "0, 16".
 #
-# threads 0, 16
+threads 1, 8

@@ -46,4 +46,7 @@ public/stylesheets/**/*.map
 public/stylesheets/**/*.css
 
 # Logo, icons made for personal use
-**/images/**
+# **/images/**
+
+# Sass cache
+.sass-cache/**
