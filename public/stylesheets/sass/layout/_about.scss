@@ -20,8 +20,8 @@
 
 #about {
 	position: relative;
-	height: auto;
 	padding: _size(element-margin);
+	line-height: _size(line-height);
 	z-index: 2;
 	background-color: _palette(bg);
 	overflow: auto;
