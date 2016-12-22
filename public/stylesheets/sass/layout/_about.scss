@@ -12,7 +12,6 @@
 	background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    
     .backlink {
     	margin-left: _size(element-margin);
     }
@@ -33,4 +32,23 @@
 	@include breakpoint(xxsmall) {
 		padding: (_size(element-margin) * 0.5);
 	}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    #about {
+    	h1 {
+    		font-size: 1.7em;
+    	}
+        p {
+            font-size: 1.4em;
+        }
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 300px) {
+    #about {
+        > * {
+            font-size: 12px;
+        }
+    }
 }

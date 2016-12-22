@@ -108,3 +108,18 @@
     }
     }
 }
+
+@media screen and (max-width: 599px) and (min-width: 300px) {
+    .showcase-row {
+        width: 100%;
+        .showcase-item-wrapper:nth-child(n+1) {
+            width: 100%;
+            clear: both;
+            display: block;
+            margin: 2%;
+            .showcase-item {
+                margin: 0 auto;
+            }
+        }
+    }
+}

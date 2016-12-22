@@ -76,3 +76,27 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    #education-wrapper {
+        div {
+            div {
+                > * {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 300px) {
+    #education-wrapper {
+        div {
+            div {
+                > * {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
