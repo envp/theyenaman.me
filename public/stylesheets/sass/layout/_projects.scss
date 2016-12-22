@@ -93,3 +93,18 @@
     text-align: center !important;
     box-shadow: none !important;
 }
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .showcase-row {
+        width: 100%;
+        .showcase-item-wrapper:nth-child(2n+1) {
+        width: 50%;
+        clear: both;
+        display: block;
+        margin: 2%;
+        .showcase-item {
+            margin: 0 auto;
+        }
+    }
+    }
+}
