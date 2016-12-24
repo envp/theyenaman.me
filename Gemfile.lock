@@ -19,15 +19,18 @@ GEM
       faraday_middleware
       multi_json
     ffi (1.9.14)
+    git-version-bump (0.15.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
     oj (2.18.0)
-    pandoc-ruby (2.0.1)
     passenger (5.1.0)
       rack
       rake (>= 0.8.1)
     puma (3.6.2)
     rack (1.6.5)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-cors (0.4.0)
     rack-protection (1.5.3)
       rack
@@ -79,10 +82,10 @@ DEPENDENCIES
   faraday_middleware-multi_json
   multi_json
   oj
-  pandoc-ruby
   passenger
   puma
   rack
+  rack-contrib
   rack-cors
   sass
   sinatra

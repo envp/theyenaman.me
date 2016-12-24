@@ -14,7 +14,7 @@ use Rack::ContentLength
 
 use Rack::Static, :urls => ['/stylesheets', '/js', '/fonts', '/images', '/files'], :root => 'public'
 
-# Sass::Plugin.options[:style] = :compressed
 use Sass::Plugin::Rack
+Sass::Plugin.options[:style] = :compressed
 
 run Rack::URLMap.new "/" => Website::Home
