@@ -1,11 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
     backports (3.6.8)
     coffee-script (2.4.1)
       coffee-script-source
@@ -25,12 +20,10 @@ GEM
       multi_json
     ffi (1.9.14)
     git-version-bump (0.15.1)
-    i18n (0.7.0)
-    minitest (5.10.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
     oj (2.18.0)
-    passenger (5.1.0)
+    passenger (5.1.1)
       rack
       rake (>= 0.8.1)
     puma (3.6.2)
@@ -43,10 +36,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rack-tracker (1.1.0)
-      activesupport (>= 3.0)
-      rack (>= 1.4)
-      tilt (>= 1.4)
     rake (11.3.0)
     sass (3.4.23)
     sinatra (1.4.7)
@@ -79,12 +68,9 @@ GEM
       sprockets (>= 2.2)
     temple (0.7.7)
     thread (0.2.2)
-    thread_safe (0.3.5)
     tilt (2.0.5)
     typhoeus (1.1.2)
       ethon (>= 0.9.0)
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
     yui-compressor (0.12.0)
 
 PLATFORMS
@@ -101,7 +87,6 @@ DEPENDENCIES
   rack
   rack-contrib
   rack-cors
-  rack-tracker
   sass
   sinatra
   sinatra-asset-pipeline
