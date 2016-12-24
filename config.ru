@@ -17,4 +17,8 @@ use Rack::Static, :urls => ['/stylesheets', '/js', '/fonts', '/images', '/files'
 use Sass::Plugin::Rack
 Sass::Plugin.options[:style] = :compressed
 
+use Rack::Tracker do
+    handler :google_analytics, { tracker: 'UA-44304708-2' }
+end
+
 run Rack::URLMap.new "/" => Website::Home

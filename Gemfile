@@ -24,5 +24,5 @@ gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
 gem 'sinatra-contrib', require: 'sinatra/contrib/all'
 gem 'sinatra-static-assets', require: 'sinatra/static_assets'
 gem 'sass'
-
+gem 'rack-tracker', require: 'rack/tracker'
 gem 'rack-contrib', require: 'rack/contrib'
