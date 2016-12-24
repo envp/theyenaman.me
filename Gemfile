@@ -6,7 +6,7 @@ gem 'faraday_middleware-multi_json'
 gem 'multi_json'
 gem 'oj'
 gem 'typhoeus'
-gem 'yui-compressor'
+gem 'yui-compressor', require: 'yui/compressor'
 
 # ruby
 # gem 'activesupport'
