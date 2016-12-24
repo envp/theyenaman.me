@@ -64,8 +64,10 @@
                 
                 .title {
                     font-size: 14px;
+                    font-family: _font(family-body);
                     padding: 0.5em;
-                    font-weight: 600;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
                 }
             }
         }
@@ -82,7 +84,7 @@
  */
 .summary {
     width: 250px;
-    font-family: "Open Sans" !important;
+    font-family: _font(family);
     font-style: italic !important;
     font-size: 14px !important;
     text-transform: none !important;

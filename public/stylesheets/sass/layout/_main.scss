@@ -13,7 +13,6 @@
     border-radius: _size(border-radius);
     cursor: default;
     text-align: center;
-    
     @include vendor('transform-origin', '50% 50%');
     @include vendor('transform', 'rotateX(0deg)');
     @include vendor('transition', (
@@ -67,39 +66,6 @@
     body.is-loading & {
         opacity: 0;
         @include vendor('transform', 'rotateX(15deg)');
-    }
-}
-
-.description {
-    text-transform: none;
-    letter-spacing: 0.5px;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif !important;
-    line-height: 1.5em;
-    text-align: justify;
-    padding-right: _size(element-margin) * 2;
-    
-    .content-link {
-        font-style: italic;
-        a {
-            text-transform: none;
-            color: _palette(highlight);
-        }
-    }
-    
-    .dates {
-        display: block;
-        font-size: 14px;
-    }
-    
-    h3 {
-        font-weight: 600;
-        margin-bottom: 0;
-    }
-    
-    ul {
-        list-style: none;
-        line-height: 1.5em;
     }
 }
 

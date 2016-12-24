@@ -28,6 +28,10 @@
 	> * {
 		z-index: 1;
 	}
+	
+	h1 {
+	    font-family: _font(family);
+	}
 
 	@include breakpoint(xxsmall) {
 		padding: (_size(element-margin) * 0.5);
@@ -53,5 +57,39 @@
         p {
             font-size: 1em !important;
         }
+    }
+}
+
+.description {
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-family: _font(family-body);
+    line-height: 1.5em;
+    text-align: justify;
+    padding-right: _size(element-margin) * 2;
+    
+    .content-link {
+        font-style: italic;
+        a {
+            text-transform: none;
+            color: _palette(highlight);
+        }
+    }
+    
+    .dates {
+        display: block;
+        font-size: 14px;
+    }
+    
+    h3 {
+        font-family: _font(family-body);
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    ul {
+        list-style: none;
+        line-height: 1.5em;
     }
 }
