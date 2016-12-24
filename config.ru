@@ -10,6 +10,7 @@ $:.unshift File.dirname(__FILE__)
 require 'app'
 
 use Rack::Deflater
+use Rack::ContentLength
 
 use Rack::Static, :urls => ['/stylesheets', '/js', '/fonts', '/images', '/files'], :root => 'public'
 
