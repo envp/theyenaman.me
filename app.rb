@@ -11,18 +11,10 @@ module Website
     configure :production do
       set :assets_precompile, %w(main.js main.css *.png *.jpg *.svg *.eot *.ttf *.woff *.woff2)
       set :assets_css_compressor, :sass
-      set :assets_js_compressor, [:yui, munge: true]
+      set :assets_js_compressor, :yui
       set :assets_protocol, :https
       set :static_cache_control, [:public, :must_revalidate, :max_age => 900000]
       register Sinatra::AssetPipeline
-      register Sinatra::AssetPack
-      
-      assets do
-        css :main, ['/public/stylesheets/*.css']
-        css_compression :sass
-        js_compression :yui
-      end
-      
       Slim::Engine.options[:pretty] = false
     end
     
