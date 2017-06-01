@@ -36,5 +36,9 @@ module Website
       
       send_file static_file(path), type: "application/pdf"
     end
+    
+    get '/blog' do
+      redirect 'https://tinmanbattleplan.wordpress.com/'
+    end
   end
 end
