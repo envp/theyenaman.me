@@ -38,7 +38,7 @@ module Website
     end
     
     get '/blog' do
-      redirect 'https://tinmanbattleplan.wordpress.com/'
+      redirect 'https://blog.theyenaman.me/'
     end
   end
 end
