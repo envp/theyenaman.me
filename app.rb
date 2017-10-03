@@ -32,7 +32,7 @@ module Website
     end
     
     get '/cv' do
-      path = 'files/resume_-_vaibhav_yenamandra.pdf'
+      path = 'files/resume_java_-_vaibhav_yenamandra.pdf'
       
       send_file static_file(path), type: "application/pdf"
     end
